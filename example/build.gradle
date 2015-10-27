@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '20.0.0'
+    buildToolsVersion '23.0.1'
     defaultConfig {
         applicationId 'org.anchorer.videoplayer.example'
         minSdkVersion 7
@@ -12,8 +12,8 @@ android {
     }
     buildTypes {
         release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
     productFlavors {
